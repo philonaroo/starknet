@@ -81,8 +81,8 @@ async def swap_avnu(_id, key, type_account):
     from_token = "ETH"
     to_token = "USDT"
 
-    min_amount = 0.0001
-    max_amount = 0.0001
+    min_amount = 0.0007
+    max_amount = 0.005
     decimal = 4
     slippage = 1
 
@@ -112,8 +112,8 @@ async def swap_jediswap(_id, key, type_account):
     from_token = "USDT"
     to_token = "ETH"
 
-    min_amount = 0.001
-    max_amount = 0.002
+    min_amount = 0.0007
+    max_amount = 0.005
     decimal = 6
     slippage = 1
 
@@ -143,8 +143,8 @@ async def swap_myswap(_id, key, type_account):
     from_token = "ETH"
     to_token = "USDT"
 
-    min_amount = 0.001
-    max_amount = 0.002
+    min_amount = 0.0007
+    max_amount = 0.005
     decimal = 6
     slippage = 1
 
@@ -174,8 +174,8 @@ async def swap_starkswap(_id, key, type_account):
     from_token = "USDT"
     to_token = "ETH"
 
-    min_amount = 0.001
-    max_amount = 0.002
+    min_amount = 0.0007
+    max_amount = 0.005
     decimal = 6
     slippage = 1
 
@@ -205,8 +205,8 @@ async def swap_sithswap(_id, key, type_account):
     from_token = "USDT"
     to_token = "ETH"
 
-    min_amount = 0.001
-    max_amount = 0.002
+    min_amount = 0.0007
+    max_amount = 0.005
     decimal = 6
     slippage = 1
 
@@ -264,8 +264,8 @@ async def deposit_zklend(_id, key, type_account):
 
     use_token = ["ETH"]
 
-    min_amount = 0.0001
-    max_amount = 0.0002
+    min_amount = 0.0007
+    max_amount = 0.005
     decimal = 5
 
     sleep_from = 20
@@ -297,8 +297,8 @@ async def deposit_nostra(_id, key, type_account):
 
     use_token = ["ETH"]
 
-    min_amount = 0.0001
-    max_amount = 0.0002
+    min_amount = 0.0007
+    max_amount = 0.005
     decimal = 5
 
     sleep_from = 20
@@ -442,8 +442,8 @@ async def make_transfer(_id, key, type_account, recipient):
     Transfer ETH
     """
 
-    min_amount = 0.0001
-    max_amount = 0.0002
+    min_amount = 0.0007
+    max_amount = 0.002
     decimal = 5
 
     all_amount = True
@@ -557,7 +557,7 @@ async def custom_routes(account_id, key, type_account):
         example (send_mail, 1, 10) run this module 1 to 10 times
         """
 
-    use_modules = [deposit_zklend, deposit_nostra]
+    use_modules = deploy_argent, [approve_almanac, None], [(send_mail_dmail, 1, 4), None], [approve_ninth, None], (send_mail_dmail, 1, 4)
 
     sleep_from = 1
     sleep_to = 3
