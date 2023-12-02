@@ -557,10 +557,10 @@ async def custom_routes(account_id, key, type_account):
         example (send_mail, 1, 10) run this module 1 to 10 times
         """
 
-    use_modules = deploy_argent, [approve_almanac, None], [(send_mail_dmail, 1, 4), None], [approve_ninth, None], (send_mail_dmail, 1, 4)
+    use_modules = [approve_almanac, send_mail_dmail, send_mail_dmail, send_mail_dmail, approve_ninth]
 
-    sleep_from = 1
-    sleep_to = 3
+    sleep_from = 2
+    sleep_to = 15
 
     random_module = True
 
